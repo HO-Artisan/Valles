@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "valles",
+	"version": "${version}",
+	"name": "Valles",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"license": "CC0-1.0",
+	"icon": "assets/valles/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"ho.artisan.valles.Valles"
+		],
+		"client": [
+			"ho.artisan.valles.Valles"
+		],
+		"fabric-datagen": [
+			"ho.artisan.valles.VallesDataGenerator"
+		],
+		"cardinal-components-entity": [
+			"ho.artisan.valles.cardinal.VallesCardinalComponent"
+		]
+	},
+	"custom": {
+		"cardinal-components": [
+			"valles:energy"
+		]
+	},
+	"mixins": [
+		"valles.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
